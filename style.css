@@ -109,8 +109,7 @@
 }
 
 .container-sec-1-image {
-    width: 400px;
-    margin-left: 50px;
+    width: 300px;
 }
 
 .info-subcontainer {
@@ -127,7 +126,7 @@
 }
 
 .container-images img {
-    width: 500px;
+    width: 300px;
 }
 
 .img-1 {
@@ -576,4 +575,176 @@ button:hover {
 
 .copyright p {
     margin: 0;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        height: 150px;
+    }
+
+    .menu-nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /* Conteúdo principal */
+    .container-sec-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-images img {
+        width: 500px;
+    }
+    
+    .img-1 {
+        margin: 0;
+        align-self: center;
+    }
+    
+    .img-2 {
+        margin: 0;
+        align-self: center;
+    }
+
+    .container-sec-1-image {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    p.info-text {
+        width: 230px;
+        font-size: 0.8em;
+    }
+
+    /* Serviços */
+    .services-design, .services-lp, .services-sm, .services-crm {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .reverse {
+        flex-direction: column !important;
+    }
+
+    /* Depoimentos */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    /* Formulário de Contato */
+    .right-contact {
+        text-align: center;
+    }
+
+    .form, .form-input, .textarea {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-card-text {
+        background-color: #fff;
+        color: #67757F;
+        border: 1px solid #BFBFBF;
+        width: 340px;
+        height: 400px;
+        padding: 0;
+        border-radius: 10px;
+        line-height: 30px;
+    }
+
+    .left-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-social-medias {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid white;
+    }
+
+    .left-contact {
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .right-contact {
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .footer-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social-medias {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Para dispositivos ainda menores */
+@media (max-width: 480px) {
+    .logo-header {
+        max-width: 120px;
+    }
+
+    .container-sec-1-image {
+        width: 200;
+    }
+
+    .menu-nav {
+        font-size: 14px;
+    }
+
+    .info-title, .services-title h1 {
+        font-size: 18px;
+    }
+
+    .form-input, .textarea {
+        font-size: 14px;
+    }
+
+    .contact-card-text {
+        font-size: 14px;
+    }
+    
 }
