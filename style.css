@@ -870,6 +870,10 @@ button {
         align-items: center;
         justify-content: center;
     }
+
+    .copyright {
+        justify-content: center;
+    }
 }
 
 /* Para dispositivos ainda menores */
