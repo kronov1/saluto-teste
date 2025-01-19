@@ -50,19 +50,23 @@
     background-color: #175AA6;
 }
 
-.container-sec-1 {
+.container-sec-2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
     align-items: center;
     padding: 150px 40px 150px 40px;
 }
 
 .container-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    width: 400px;
+}
+
+.container-info {
+    font-size: 0.8em;
+    line-height: 30px;
+    color: #fff;
 }
 
 .info {
@@ -85,6 +89,41 @@
     color: white;
 }
 
+.container-sec-1 {
+    margin: 90px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.container-sec-1 img {
+    width: 400px;
+}
+
+.infos-container-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
+    width: 400px;
+}
+
+.infos-container-1 h1 {
+    font-size: 1.9em;
+    color: #fff;
+}
+
+.infos-container-1 span {
+    font-weight: 400;
+}
+
+.infos-container-1 p {
+    color: #fff;
+    font-size: 1.0em;
+}
+
 .borda {
     border-bottom: 1px solid white;
     padding-bottom: 40px;
@@ -93,23 +132,30 @@
 .container-sec-1 button {
     padding: 10px 20px 10px 20px;
     width: 300px;
-    border: 2px solid white;
-    background-color: transparent;
+    border: none;
+    background-color: white;
     cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
 .container-sec-1 a {
-    color: white;
+    color: #00328a;
     text-decoration: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 7px;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
-.container-sec-1-image {
-    width: 300px;
+.container-sec-2-image {
+    width: 400px;
+}
+
+button:hover {
+    transform: scale(1.03);
 }
 
 .info-subcontainer {
@@ -184,93 +230,151 @@
 /*Services*/
 /**/
 
-.services {
+.service img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-image {
     display: flex;
-    flex-direction: column;
-    gap: 200px;
+    justify-content: center;
+}
+
+.services-info {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .service {
-    width: 100vw;
+    border: 1px solid #BFBFBF;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: start;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20%;
+    gap: 10px;
+    padding-right: 15px;
 }
 
-.reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+.services-texts-sm {
+    overflow-y: hidden;
 }
 
-.service img {
-    width: 500px;
+.services-texts-design::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+  
+/* Fundo da barra de rolagem */
+.services-texts-design::-webkit-scrollbar-track {
+background: #f5f5f5; /* Cor do fundo da barra */
+border-radius: 10px; /* Bordas arredondadas */
 }
 
-.service div {
-    width: 400px;
+/* Estilo do "polegar" da barra */
+.services-texts-design::-webkit-scrollbar-thumb {
+background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente no polegar */
+border-radius: 10px; /* Bordas arredondadas */
 }
 
-.services-design .bold {
-    font-weight: 700;
+/* Estilo ao passar o mouse sobre o "polegar" */
+.services-texts-design::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(45deg, #2575fc, #6a11cb); /* Gradiente invertido */
+}
+
+/* Bordas da barra */
+.services-texts-design::-webkit-scrollbar-thumb:active {
+background: #4c9eff; /* Cor sólida ao clicar */
+}
+
+.services-texts-crm::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+  
+/* Fundo da barra de rolagem */
+.services-texts-crm::-webkit-scrollbar-track {
+background: #f5f5f5; /* Cor do fundo da barra */
+border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do "polegar" da barra */
+.services-texts-crm::-webkit-scrollbar-thumb {
+background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente no polegar */
+border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo ao passar o mouse sobre o "polegar" */
+.services-texts-crm::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(45deg, #2575fc, #6a11cb); /* Gradiente invertido */
+}
+
+/* Bordas da barra */
+.services-texts-crm::-webkit-scrollbar-thumb:active {
+background: #4c9eff; /* Cor sólida ao clicar */
+}
+
+.services-texts-crm::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+  
+/* Fundo da barra de rolagem */
+.services-texts-crm::-webkit-scrollbar-track {
+background: #f5f5f5; /* Cor do fundo da barra */
+border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do "polegar" da barra */
+.services-texts-crm::-webkit-scrollbar-thumb {
+background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente no polegar */
+border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo ao passar o mouse sobre o "polegar" */
+.services-texts-crm::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(45deg, #2575fc, #6a11cb); /* Gradiente invertido */
+}
+
+/* Bordas da barra */
+.services-texts-crm::-webkit-scrollbar-thumb:active {
+background: #4c9eff; /* Cor sólida ao clicar */
 }
 
 .service p {
-    margin-top: 30px;
+    font-weight: 600;
     line-height: 20px;
-    font-weight: 500;
 }
 
-.service h1, h2, li {
-    font-weight: 700;
-    color: #000F23;
-}
-
-.service div ul {
-    list-style-type: disc;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.services-design p {
+    margin: 15px 0px 15px 0px;
 }
 
 .service li {
-    margin-bottom: 0px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
-.service span {
-    font-weight: 500;
-    color: #000F23;
+.services-sm ul {
+    margin-bottom: 15px;
 }
 
-.service h1 {
-    color: #000F23;
-    font-size: 1.8em;
-    font-weight: 800;
+.services-sm p {
+    color: #929292;
+    font-weight: 300;
+}
+
+.service h1, h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.services-crm h2 {
+.services h2 {
     margin-top: 20px;
-}
-
-.service-crm p {
-    font-weight: lighter;
-}
-
-.services-crm span {
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-.service h2 {
-    color: #000F23;
-}
-
-.social-media-p {
-    color: #67757F;
-    width: 400px;
 }
 
 /**/
@@ -468,9 +572,7 @@ button {
     transition: all .2s;
 }
 
-button:hover {
-    background-color: #ffffff1e;
-}
+
 
 .location h1 {
     text-align: center;
@@ -593,9 +695,55 @@ button:hover {
 
     /* Conteúdo principal */
     .container-sec-1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 50px;
         align-items: center;
         text-align: center;
+    }
+
+    .infos-container-1 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infos-container-1 h1 {
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    .infos-container-1 span {
+        font-weight: 400;
+    }
+    
+    .infos-container-1 p {
+        color: #fff;
+        font-size: 1.0em;
+    }
+
+    .container-sec-1 img {
+        width: 250px;
+    }   
+
+    .container-sec-2 img {
+        width: 250px;
+    }
+
+    .container-sec-2 {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-info {
+        width: 350px;
+        text-align: justify;
+    }
+
+    .container-info h1 {
+        font-size: 1.4em;
     }
 
     .container-images img {
@@ -623,9 +771,12 @@ button:hover {
     }
 
     /* Serviços */
-    .services-design, .services-lp, .services-sm, .services-crm {
+    .services-info {
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 
     .service img {
