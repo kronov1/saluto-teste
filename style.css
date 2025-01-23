@@ -37,8 +37,8 @@
 }
 
 .menu-nav li {
-    color: #00328a;
-    background-color: #fff;
+    color: #fff;
+    border: 1px solid white;
     padding: 10px 10px 10px 10px;
     border-radius: 3px;
     cursor: pointer;
@@ -68,6 +68,11 @@
 
 .container-info {
     width: 400px;
+}
+
+.container-info h1 {
+    font-size: 1.4em;
+    font-weight: 500;
 }
 
 .container-info {
@@ -356,7 +361,7 @@ background: #4c9eff; /* Cor sólida ao clicar */
 
 .service p {
     color: rgb(63, 63, 63);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
 }
 
@@ -366,7 +371,7 @@ background: #4c9eff; /* Cor sólida ao clicar */
 
 .service li {
     color: rgb(51, 51, 51);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
 }
 
@@ -376,7 +381,7 @@ background: #4c9eff; /* Cor sólida ao clicar */
 
 .services-sm p {
     color: rgb(63, 63, 63);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .service h1 {
@@ -466,7 +471,7 @@ background: #4c9eff; /* Cor sólida ao clicar */
     align-items: center;
     justify-content: flex-start;
     gap: 20%;
-    padding: 150px 100px 150px 100px;
+    padding: 50px 100px 150px 100px;
     background: linear-gradient(180deg, rgba(23,90,166,1) 0%, rgba(9,35,64,1) 100%);
 }
 
@@ -482,7 +487,7 @@ background: #4c9eff; /* Cor sólida ao clicar */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    line-height: 30px;
 }
 
 .left-title p {
